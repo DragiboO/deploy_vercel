@@ -1,0 +1,78 @@
+.category {
+
+    .cross {
+        position: relative;
+
+        img {
+            position: absolute;
+            right: 60px;
+            z-index: -1;
+        }
+    }
+
+    h2 {
+        font-size: 18px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        color: #5E6282;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    h3 {
+        font-family: 'Volkhov';
+        font-weight: bold;
+        font-size: 50px;
+        color: #14183E;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    
+    .all_card {
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 80px;
+        margin-bottom: 200px;
+
+        .card {
+            width: 17%;
+            border-radius: 35px;
+            align-items: center;
+            background-color: rgb(255, 255, 255);
+
+            .img_size {
+                display: flex;
+                justify-content: center;
+                align-items: flex-end;
+                height: 150px;
+                margin-bottom: 20px;
+            }
+
+            h1 {
+                font-size: 20px;
+                font-family: 'Open', sans-serif;
+                text-align: center;
+                font-weight: bolder;
+                color: #1E1D4C;
+                margin-bottom: 20px;
+            }
+
+            p {
+                text-align: center;
+                font-family: 'Poppins', sans-serif;
+                font-size: 16px;
+                color: #5E6282;
+                margin-bottom: 30px;
+                padding-left: 30px;
+                padding-right: 30px;
+            }
+        }
+
+        .flight {
+            box-shadow: rgba(0, 0, 0, 0.07) 0px 15px 30px 0px;
+        }
+    }
+
+}

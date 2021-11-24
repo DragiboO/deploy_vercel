@@ -1,0 +1,498 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+* {
+  box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+header {
+  margin-bottom: 200px;
+}
+header .decor {
+  position: relative;
+  height: 0px;
+  width: 100%;
+  z-index: -2;
+  overflow-x: clip;
+}
+header .decor .ellipse {
+  position: absolute;
+  left: -550px;
+  top: -200px;
+}
+header .decor .decore {
+  position: absolute;
+  right: -5%;
+  top: -200px;
+}
+header nav {
+  padding-left: 130px;
+  padding-right: 130px;
+  justify-content: space-between;
+  display: flex;
+  margin-bottom: 100px;
+}
+header nav img {
+  object-fit: contain;
+}
+header nav ul {
+  display: flex;
+}
+header nav ul li {
+  padding: 50px 22px 50px 22px;
+}
+header nav ul li a {
+  font-family: sans-serif;
+  color: #212832;
+  text-decoration: none;
+  padding: 10px;
+  border: solid 1px rgba(255, 255, 255, 0);
+}
+header nav ul li a:hover {
+  border: solid 1px #212832;
+  border-radius: 5px;
+}
+header section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+header section .left {
+  width: 40%;
+}
+header section .left h3 {
+  font-size: 20px;
+  color: #DF6951;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+header section .left h1 {
+  font-size: 84px;
+  font-weight: bold;
+  font-family: "Volkhov";
+  color: #181E4B;
+  margin-bottom: 100px;
+}
+header section .left h1 span {
+  position: relative;
+}
+header section .left h1 span img {
+  position: absolute;
+  top: 70px;
+  right: -140px;
+  z-index: -1;
+}
+header section .left .description {
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  color: #5E6282;
+  margin-right: 80px;
+  margin-bottom: 50px;
+}
+header section .left div {
+  display: flex;
+}
+header section .left div .button {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #F1A501;
+  border-radius: 10px;
+}
+header section .left div .button p {
+  color: white;
+  font-size: 18px;
+  font-family: sans-serif;
+  margin-right: 30px;
+  margin-left: 30px;
+}
+header section .left div .play {
+  align-items: center;
+  justify-content: space-evenly;
+  width: 200px;
+  margin-left: 50px;
+}
+header section .left div .play p {
+  font-size: 17px;
+  font-family: "Poppins", sans-serif;
+  color: #686D77;
+}
+header section .right {
+  width: 20%;
+  height: 100px;
+  position: relative;
+}
+header section .right img {
+  position: absolute;
+  top: -350px;
+  right: 0px;
+  z-index: -1;
+}
+
+.category .cross {
+  position: relative;
+}
+.category .cross img {
+  position: absolute;
+  right: 60px;
+  z-index: -1;
+}
+.category h2 {
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: #5E6282;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.category h3 {
+  font-family: "Volkhov";
+  font-weight: bold;
+  font-size: 50px;
+  color: #14183E;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.category .all_card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 80px;
+  margin-bottom: 200px;
+}
+.category .all_card .card {
+  width: 17%;
+  border-radius: 35px;
+  align-items: center;
+  background-color: white;
+}
+.category .all_card .card .img_size {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 150px;
+  margin-bottom: 20px;
+}
+.category .all_card .card h1 {
+  font-size: 20px;
+  font-family: "Open", sans-serif;
+  text-align: center;
+  font-weight: bolder;
+  color: #1E1D4C;
+  margin-bottom: 20px;
+}
+.category .all_card .card p {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  color: #5E6282;
+  margin-bottom: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.category .all_card .flight {
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 15px 30px 0px;
+}
+
+.destinations .curve {
+  position: relative;
+}
+.destinations .curve img {
+  position: absolute;
+  right: 170px;
+  top: 270px;
+  z-index: -1;
+}
+.destinations h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #5E6282;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.destinations h1 {
+  font-family: "Volkhov";
+  font-size: 50px;
+  font-weight: bold;
+  color: #14183E;
+  text-align: center;
+  margin-bottom: 60px;
+}
+.destinations .flex_position {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+  margin-bottom: 200px;
+}
+.destinations .flex_position .desti {
+  height: 420px;
+  width: 20%;
+  border-radius: 20px;
+  display: grid;
+  grid-template-rows: 1fr 100px;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 15px 30px 0px;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  color: #5E6282;
+  font-weight: 500;
+}
+.destinations .flex_position .desti .desti_info {
+  background-color: white;
+  border-radius: 0px 0px 20px 20px;
+  display: grid;
+  grid-template-columns: 1.7fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  text-align: center;
+  align-items: center;
+}
+.destinations .flex_position .desti .desti_info p:nth-child(3) {
+  font-size: 16px;
+}
+.destinations .flex_position .desti1 {
+  background-image: url("img/Rectangle 14.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 130%;
+}
+.destinations .flex_position .desti2 {
+  background-image: url("img/Rectangle -1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 130%;
+}
+.destinations .flex_position .desti3 {
+  background-image: url("img/Rectangle 3.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 130%;
+}
+
+.booking {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+}
+.booking .left {
+  width: 35%;
+}
+.booking .left h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #5E6282;
+  margin-bottom: 20px;
+}
+.booking .left h1 {
+  font-family: "Volkhov";
+  font-size: 50px;
+  font-weight: 700;
+  color: #14183E;
+  margin-bottom: 50px;
+}
+.booking .left .step {
+  display: grid;
+  grid-template-columns: 1fr 7fr;
+  margin-bottom: 65px;
+}
+.booking .left .step h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #5E6282;
+  margin-bottom: 10px;
+}
+.booking .left .step p {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #5E6282;
+}
+.booking .right {
+  width: 35%;
+  position: relative;
+}
+.booking .right img {
+  position: absolute;
+  top: -150px;
+  right: -100px;
+}
+
+.commentary {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  margin-top: 150px;
+  margin-bottom: 100px;
+}
+.commentary .left {
+  width: 30%;
+}
+.commentary .left h3 {
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: #5E6282;
+  margin-bottom: 20px;
+}
+.commentary .left h1 {
+  font-size: 50px;
+  font-family: "Volkhov";
+  font-weight: 700;
+  color: #14183E;
+  margin-bottom: 90px;
+}
+.commentary .right {
+  width: 40%;
+}
+
+.sponsort {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 150px;
+}
+
+.form {
+  width: 85%;
+  height: 500px;
+  margin-left: 7.5%;
+  background-image: url("img/Group 78.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  justify-content: center;
+}
+.form div {
+  width: 80%;
+}
+.form div h2 {
+  margin-top: 70px;
+  font-family: "Poppins", sans-serif;
+  font-size: 33px;
+  font-weight: 600;
+  color: #5E6282;
+  text-align: center;
+  margin-bottom: 100px;
+}
+.form div form {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  align-items: center;
+  gap: 50px;
+}
+.form div form #email {
+  padding: 25px;
+  background-color: white;
+  border: none;
+  grid-column: 2/4;
+  border-radius: 10px;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  color: #39425D;
+}
+.form div form #button {
+  padding: 25px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(#FF946D, #FF7D68);
+  font-family: "Poppins", sans-serif;
+  font-size: 17px;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+footer {
+  margin-top: 80px;
+  margin-right: 10%;
+  margin-left: 10%;
+  display: grid;
+  gap: 50px;
+  grid-template-columns: 3fr 2fr 2fr 2fr 3fr;
+}
+footer h1 {
+  font-size: 44px;
+  font-family: "Poppins", sans-serif;
+  color: #181E4B;
+  margin-bottom: 30px;
+}
+footer h2 {
+  font-size: 21px;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  color: #080809;
+  margin-bottom: 40px;
+}
+footer h3 {
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  color: #5E6282;
+  margin-bottom: 20px;
+}
+footer p {
+  font-size: 13px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  color: #5E6282;
+}
+footer .reserved {
+  text-align: center;
+  grid-column: 1/-1;
+  margin-bottom: 80px;
+}
+
+/*# sourceMappingURL=style.css.map */
